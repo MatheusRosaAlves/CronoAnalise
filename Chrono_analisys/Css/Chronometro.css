@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+.Cabecalho{
+    height: 80px;
+    display: flex;
+
+}
+.menu_img{
+    height: 80px;
+}
+.menu_logo{
+    height: 40px;
+    margin: 0.5% 83%;
+    border-radius: 5px ;
+}
