@@ -1,47 +1,25 @@
-<html>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
-    rel="stylesheet"
-  />
-
-  <head>
-    <title>Chrono analise</title>
-    <link rel="stylesheet" href="Css/Chronometro.css" />
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono Análise</title>
+    <link rel="stylesheet" href="Css/Chronometro.css">
+</head>
+<body>
     <header>
-      <div class="Cabecalho">
-        <img class="menu_img" src="Imagens/menu-Photoroom.png" />
-        <img class="menu_logo" src="Imagens/senai.jpg" alt="" />
-      </div>
+        <div class="Cabecalho">
+            <img class="menu_img" src="Imagens/menu-Photoroom.png" alt="Menu">
+            <img class="menu_logo" src="Imagens/senai.jpg" alt="Logo Senai">
+        </div>
     </header>
-    <main>
-      <section class="Total">
-        <div class="Principal">
-          <div class="Cronometro" id="display">00:00.00</div>
-          <div class="botões">
-            <button id="start">Iniciar</button>
-            <button id="stop">Parar</button>
-            <button id="lap">Salvar Peça</button>
-            <button id="reset">Zerar</button>
-          </div>
-          <div id="laps"></div>
-        </div>
-        <div class="Secundario">
-          <div class="MedMinMax">
-            <div class="Media">Média</div>
-            <div class="MediaResultado">MédiaResultado</div>
-            <div class="Minimo">Minimo</div>
-            <div class="MinimoResultado">MinimoResultado</div>
-            <div class="Maximo">Maximo</div>
-            <div class="MaximoResultado">MaximoResultado</div>
-          </div>
-        </div>
-      </section>
-      
-    </main>
-  </body>
-  <script src="Cronometro.js"></script>
+
+    <!-- Cronômetro -->
+    <div class="cronometro-container">
+        <div id="display">00:00:00</div>
+        
+    </div>
+
+    <script src="Js/Chronometro.js"></script>
+</body>
 </html>
