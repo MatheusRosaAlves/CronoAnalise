@@ -1,0 +1,124 @@
+body{
+    background-color: black;
+    font-family:"Staatliches", sans-serif;
+    color: white;
+}
+.Cabecalho{
+    height: 80px;
+    display: flex;
+
+}
+.menu_img{
+    height: 80px;
+}
+.menu_logo{
+    height: 40px;
+    margin: 0.5% 83%;
+    border-radius: 5px ;
+
+}
+/*gerencia o espaço total*/
+.Total{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 200px;
+}
+
+/*Estiliza o cronometro*/
+.Cronometro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#display {
+    display: flex;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/*Estiliza as tomadas*/    
+#laps {
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 2505x;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.Lap {
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 2px solid #ddd;
+    color: rgb(255, 255, 255);
+}
+
+/*Estiliza os Botoes*/
+.botões{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/*Estiliza as medias, minimas e maximas*/
+.Secundario{
+    display: flex;
+    justify-content: top;
+    position: fixed;
+    top: 20%;
+    right: 15%;
+    font-size: 22;
+}
+.MedMinMax{
+    text-align: center;;
+    width: 200px;
+}
+.Media{
+
+    padding: 4px 0px;
+}
+.Minimo{
+   border-top: 2px solid #ddd;
+   padding: 4px 0px; 
+}
+.Maximo{
+    border-top: 2px solid #ddd;
+    padding: 4px 0px;
+    
+}
+.Start{
+    background-image: url(../Imagens/p2.png);
+    background-size: 75px 60px ;
+}
+.LapBtn{
+    background-image: url(../Imagens/plus2.png);
+    background-size:70px 70px ;
+}
+
+.Stop{
+    background-image: url(../Imagens/pause2.png);
+    background-size: 70px 70px ;
+}
+
+.Reset{
+    background-image: url(../Imagens/reset.png);
+    background-size: 65px 65px ;
+}
+.geral{
+    background-color:transparent;
+    background-position: center;
+    border: none;
+    width: 50px;
+    height: 50px; 
+}
+.geral:hover{
+    transition: 0.3s ease;
+    transform: scale(1.15);
+    cursor: pointer;;
+}
