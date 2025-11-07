@@ -9,7 +9,11 @@
   <head>
     <title>Chrono analise</title>
     <link rel="stylesheet" href="Css/Chronometro.css" />
+    <link rel="icon" href="./Imagens/relogio.png">
+
   </head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <body>
     <header>
       <div class="Cabecalho">
@@ -32,15 +36,31 @@
         <div class="Secundario">
           <div class="MedMinMax">
             <div class="Media">Média</div>
-            <div class="MediaResultado" id="media">--</div>
+            <div class="Resultado" id="media">--</div>
             <div class="Minimo">Menor Tempo</div>
-            <div class="MinimoResultado" id="menor">--</div>
+            <div class="Resultado" id="menor">--</div>
             <div class="Maximo">Maior Tempo</div>
-            <div class="MaximoResultado" id="maior">--</div>
+            <div class="Resultado" id="maior">--</div>
+            <div class="QntdPecas">Total de peças</div>
+            <div class="Total" id="Total">0</div>
           </div>
         </div>
       </section>
-      
+      <section class="DivGrafico">
+        <div class="Grafico">
+          <canvas
+            class="graficoTempos"
+            id="graficoTempos"
+            width="400px"
+            height="200px"
+          ></canvas>
+
+          <div class="ExportarBtn">
+            <button class="Exportar" id="exportarCSV">Exportar CSV</button>
+            <button class="Exportar" id="exportarExcel">Exportar Excel</button>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script src="Cronometro.js"></script>
